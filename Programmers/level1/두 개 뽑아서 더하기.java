@@ -3,7 +3,7 @@ import java.util.*;
 class Solution {
     public int[] solution(int[] numbers) {
         int[] answer = {};
-        Set<Integer> set = new TreeSet<Integer>();
+        Set<Integer> set = new HashSet<Integer>();
 
         for(int i = 0; i< numbers.length; i++){
             for(int j = 1; j< numbers.length; j++){
@@ -18,6 +18,7 @@ class Solution {
         for(int i = 0; i<set.size(); i++){
             answer[i] = arr[i];
         }
+        Arrays.sort(answer);
 
         return answer;
     }
