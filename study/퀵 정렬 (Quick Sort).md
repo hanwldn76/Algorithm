@@ -181,3 +181,18 @@ public class QuickSort {
     }
 }
 ```
+
+<img width="194" alt="image" src="https://github.com/hanwldn76/Algorithm/assets/138774991/122c3e07-02c9-497f-861d-712e3ba34c0f">
+
+<br>
+
+<br>
+
+**시간 복잡도**
+
+- 평균 nlogn, 최악 n^2
+
+- 정렬이 된 경우나, 거의 정렬된 경우 O(n^2)에 가까움
+
+- 항상 빠른건 x, 데이터 특성에 따라 다름
+- 
