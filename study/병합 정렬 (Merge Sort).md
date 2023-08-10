@@ -28,7 +28,8 @@
 
 <br>
 
-`6 7` `5 8`
+<img width="466" alt="image" src="https://github.com/hanwldn76/Algorithm/assets/138774991/752bb67e-2ea8-4a8f-abba-34ec64a56605">
+
 
 i와 j를 비교해서 더 작은 걸 k의 위치에 옮김.
 
