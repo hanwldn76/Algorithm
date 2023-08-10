@@ -1,6 +1,6 @@
 ### 병합 정렬
 
->일단 반으로 나누고 나중에 합쳐서 정렬하는 것(합치는 순간에 정렬)
+>일단 반으로 나누고 나중에 합쳐서 정렬하는 것 (합치는 순간에 정렬)
 
 <br>
 
@@ -25,6 +25,13 @@
 너비 n = 8
 
 높이($\log_2 n$) $\log_2 8$ = 3
+
+<br>
+
+**예시**
+
+<img width="523" alt="image" src="https://github.com/hanwldn76/Algorithm/assets/138774991/4569c135-4f68-4490-9f8e-bf8101f944f0">
+
 
 <br>
 
@@ -122,6 +129,8 @@ public class MergeSort {
 <br>
 
 <img width="158" alt="image" src="https://github.com/hanwldn76/Algorithm/assets/138774991/10fbd310-86a0-4f2a-ada2-da2203ccf7ff">
+
+<br>
 
 <br>
 
