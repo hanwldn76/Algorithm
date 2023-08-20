@@ -8,6 +8,51 @@
 
 <br>
 
+**수행 과정**
+
+1. 시작 노드를 큐에 삽입하고 방문처리 한다.
+2. 큐에서 하나의 노드를 꺼낸다.
+3. 해당 노드에 연결된 노드 중 방문하지 않은 노드를 방문하고, 차례로 큐에 삽입한다.
+4. 2~3번 과정을 더 이상 수행할 수 없을 때까지 반복한다.
+
+<br>
+
+**수행 과정 그림**
+
+![image](https://github.com/hanwldn76/Algorithm/assets/138774991/cffc55ea-48d2-4d6a-a450-824708dc3a7e)
+
+<br>
+
+![image](https://github.com/hanwldn76/Algorithm/assets/138774991/126803d8-4e59-4e6e-bd42-998e7ef3345b)
+
+큐에서 1을 꺼냄.
+
+1에 연결된 노드 중 방문하지 않은 노드인 2와 3을 차례로 큐에 삽입함.
+
+<br>
+
+![image](https://github.com/hanwldn76/Algorithm/assets/138774991/97da7ab1-dfcf-4c8e-806f-0070fee01787)
+
+큐에서 2를 꺼냄.
+
+2에 연결된 노드 중 방문하지 않은 노드인 4와 5를 차례로 큐에 삽입함.
+
+<br>
+
+![image](https://github.com/hanwldn76/Algorithm/assets/138774991/63a51706-5b39-4d96-ac1f-0ea22263af3b)
+
+큐에서 3을 꺼냄.
+
+3에 연결된 노드 중 방문하지 않은 노드인 6과 7을 차례로 큐에 삽입함.
+
+<br>
+
+![image](https://github.com/hanwldn76/Algorithm/assets/138774991/63a51706-5b39-4d96-ac1f-0ea22263af3b)
+방문하지 않은 노드가 없으므로 큐에서 순차적으로 노드를 꺼냄.
+
+
+<br>
+
 **코드**
 
 ```
