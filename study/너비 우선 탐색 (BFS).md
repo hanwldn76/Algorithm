@@ -19,54 +19,63 @@
 
 **수행 과정 그림**
 
-![image](https://github.com/hanwldn76/Algorithm/assets/138774991/cffc55ea-48d2-4d6a-a450-824708dc3a7e)
+![image](https://github.com/hanwldn76/Algorithm/assets/138774991/b3f9cee0-7f04-4275-8260-8881e7ceaa3d)
 
 <br>
 
-![image](https://github.com/hanwldn76/Algorithm/assets/138774991/50c7f034-3844-482c-9444-ffeb7398e313)
+![image](https://github.com/hanwldn76/Algorithm/assets/138774991/1e6ea757-7c6a-49da-84ac-1b7ef2293682)
 
 큐에 1을 삽입.
 
+![image](https://github.com/hanwldn76/Algorithm/assets/138774991/aea46d18-30f2-4ac1-adec-24b8add56931)
+
 <br>
 
-![image](https://github.com/hanwldn76/Algorithm/assets/138774991/126803d8-4e59-4e6e-bd42-998e7ef3345b)
+![image](https://github.com/hanwldn76/Algorithm/assets/138774991/cfd4f23e-1405-40f0-8d25-2b7b309cb18e)
 
 큐에서 1을 꺼냄.
 
 1에 연결된 노드 중 방문하지 않은 노드인 2와 3을 차례로 큐에 삽입함.
 
-![image](https://github.com/hanwldn76/Algorithm/assets/138774991/d1c54294-f1f3-4766-bfc6-c7957300723e)
+![image](https://github.com/hanwldn76/Algorithm/assets/138774991/163b8d9d-9e1e-4e00-907e-1eb339bf6ae7)
 
 <br>
 
-![image](https://github.com/hanwldn76/Algorithm/assets/138774991/97da7ab1-dfcf-4c8e-806f-0070fee01787)
+![image](https://github.com/hanwldn76/Algorithm/assets/138774991/fb3c346a-1dbd-4608-aa19-06dd4b4f15b1)
 
 큐에서 2를 꺼냄.
 
 2에 연결된 노드 중 방문하지 않은 노드인 4와 5를 차례로 큐에 삽입함.
 
-![image](https://github.com/hanwldn76/Algorithm/assets/138774991/bc0be990-66ac-41c6-ab8e-99337dddd1da)
+![image](https://github.com/hanwldn76/Algorithm/assets/138774991/a93e2f88-0784-4d28-a8ac-48589b1f3d77)
 
 <br>
 
-![image](https://github.com/hanwldn76/Algorithm/assets/138774991/63a51706-5b39-4d96-ac1f-0ea22263af3b)
+![image](https://github.com/hanwldn76/Algorithm/assets/138774991/12b2fb68-e554-4a1b-9e54-e8c2ba200464)
 
 큐에서 3을 꺼냄.
 
 3에 연결된 노드 중 방문하지 않은 노드인 6과 7을 차례로 큐에 삽입함.
 
-![image](https://github.com/hanwldn76/Algorithm/assets/138774991/a30188f3-4acf-4eb8-ae1a-ce3c99328c0a)
+![image](https://github.com/hanwldn76/Algorithm/assets/138774991/ac2cc5d3-1059-4900-a72d-b77381957bc8)
 
 <br>
 
-![image](https://github.com/hanwldn76/Algorithm/assets/138774991/63a51706-5b39-4d96-ac1f-0ea22263af3b)
+![image](https://github.com/hanwldn76/Algorithm/assets/138774991/3c98e519-5e68-4b64-ae7f-529db07a43bd)
+
 방문하지 않은 노드가 없으므로 큐에서 순차적으로 노드를 꺼냄.
 
-![image](https://github.com/hanwldn76/Algorithm/assets/138774991/833d4398-6a99-4bbb-bf88-3650736f7165)
+<br>
 
 <br>
 
 **코드**
+
+<br>
+
+![image](https://github.com/hanwldn76/Algorithm/assets/138774991/a0089db1-3850-4da8-b9c4-2b79ed4781c8)
+
+<br>
 
 ```
 import java.util.*;
