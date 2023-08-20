@@ -23,11 +23,19 @@
 
 <br>
 
+![image](https://github.com/hanwldn76/Algorithm/assets/138774991/50c7f034-3844-482c-9444-ffeb7398e313)
+
+큐에 1을 삽입.
+
+<br>
+
 ![image](https://github.com/hanwldn76/Algorithm/assets/138774991/126803d8-4e59-4e6e-bd42-998e7ef3345b)
 
 큐에서 1을 꺼냄.
 
 1에 연결된 노드 중 방문하지 않은 노드인 2와 3을 차례로 큐에 삽입함.
+
+![image](https://github.com/hanwldn76/Algorithm/assets/138774991/d1c54294-f1f3-4766-bfc6-c7957300723e)
 
 <br>
 
@@ -37,6 +45,8 @@
 
 2에 연결된 노드 중 방문하지 않은 노드인 4와 5를 차례로 큐에 삽입함.
 
+![image](https://github.com/hanwldn76/Algorithm/assets/138774991/bc0be990-66ac-41c6-ab8e-99337dddd1da)
+
 <br>
 
 ![image](https://github.com/hanwldn76/Algorithm/assets/138774991/63a51706-5b39-4d96-ac1f-0ea22263af3b)
@@ -45,11 +55,14 @@
 
 3에 연결된 노드 중 방문하지 않은 노드인 6과 7을 차례로 큐에 삽입함.
 
+![image](https://github.com/hanwldn76/Algorithm/assets/138774991/a30188f3-4acf-4eb8-ae1a-ce3c99328c0a)
+
 <br>
 
 ![image](https://github.com/hanwldn76/Algorithm/assets/138774991/63a51706-5b39-4d96-ac1f-0ea22263af3b)
 방문하지 않은 노드가 없으므로 큐에서 순차적으로 노드를 꺼냄.
 
+![image](https://github.com/hanwldn76/Algorithm/assets/138774991/833d4398-6a99-4bbb-bf88-3650736f7165)
 
 <br>
 
