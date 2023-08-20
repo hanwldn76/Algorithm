@@ -139,3 +139,17 @@ public class BFS {
 }
 
 ```
+
+<br>
+
+**입력**
+
+<img width="55" alt="image" src="https://github.com/hanwldn76/Algorithm/assets/138774991/9d29eb6b-96ae-4597-8af5-490ea0331930">
+
+<br>
+
+<br>
+
+**출력**
+
+<img width="461" alt="image" src="https://github.com/hanwldn76/Algorithm/assets/138774991/4e03a6da-b470-4868-89db-951dc77f90c6">
