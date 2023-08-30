@@ -65,6 +65,8 @@
 
 ---> 1과 3이 연결되어있는지 파악하기 위해선 부모 노드만 보고 파악할 수 x, 때문에 **재귀 함수**를 사용
 
+<br>
+
 |1|2|3|4|5|6|7|8|
 |-|-|-|-|-|-|-|-|
 |1|1|**2**|4|5|6|7|8|
@@ -73,11 +75,15 @@
 
 그 다음 재귀함수를 사용해서 인덱스 2의 부모가 누군지 확인 함.(== 인덱스 2의 값이 뭔지 확인 함.)
 
+<br>
+
 **3의 부모를 찾는 과정**
 
 1. 3이 가리키고 있는 2를 찾음.(3의 부모 2를 찾음.)
 2. 2의 부모 1이 가리키고 있는 1을 찾음.
 3. 3의 최종적인 부모는 1임을 알 수 있음.
+
+<br>
 
 |1|2|3|4|5|6|7|8|
 |-|-|-|-|-|-|-|-|
@@ -152,13 +158,21 @@ public class UnionFind {
 }
 ```
 
+<br>
+
 **입력**
 
 <img width="38" alt="image" src="https://github.com/hanwldn76/Algorithm/assets/138774991/3f69f14a-a7ba-46b4-b009-a0a12169e629">
 
+<br>
+
 **출력1**
 
 <img width="172" alt="image" src="https://github.com/hanwldn76/Algorithm/assets/138774991/6f982e88-2309-472f-82a8-a0bb440ff50b">
+
+<br>
+
+<br>
 
 ```
         // 위 코드 동일
@@ -166,7 +180,10 @@ public class UnionFind {
         System.out.println("1과 5는 연결되어 있나요? "+ (findParent(parent, 1, 5)?"예":"아니오"));
         unionParent(parent, 1, 6); // 1과 6을 연결해도 1과 5는 연결됨
         System.out.println("1과 5는 연결되어 있나요? "+ (findParent(parent, 1, 5)?"예":"아니오"));
+
 ```
+
+<br>
 
 **출력2**
 
