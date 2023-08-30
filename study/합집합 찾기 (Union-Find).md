@@ -152,11 +152,23 @@ public class UnionFind {
 }
 ```
 
-**입력1**
+**입력**
 
-<img width="170" alt="image" src="https://github.com/hanwldn76/Algorithm/assets/138774991/6e49bb9f-a519-4414-8bc6-beafd87e292d">
+<img width="38" alt="image" src="https://github.com/hanwldn76/Algorithm/assets/138774991/3f69f14a-a7ba-46b4-b009-a0a12169e629">
 
 **출력1**
 
+<img width="172" alt="image" src="https://github.com/hanwldn76/Algorithm/assets/138774991/6f982e88-2309-472f-82a8-a0bb440ff50b">
 
+```
+        // 위 코드 동일
+
+        System.out.println("1과 5는 연결되어 있나요? "+ (findParent(parent, 1, 5)?"예":"아니오"));
+        unionParent(parent, 1, 6); // 1과 6을 연결해도 1과 5는 연결됨
+        System.out.println("1과 5는 연결되어 있나요? "+ (findParent(parent, 1, 5)?"예":"아니오"));
+```
+
+**출력2**
+
+<img width="172" alt="image" src="https://github.com/hanwldn76/Algorithm/assets/138774991/c25caa7e-83ef-4e24-aebb-1c606b8fe69b">
 
