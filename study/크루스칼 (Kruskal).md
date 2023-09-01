@@ -133,19 +133,22 @@ Union-Find 알고리즘을 사용해서 사이클 여부 확인
 import java.util.*;
 
 public class Kruskal {
-    static int getParent(int[] parent, int x){
+    // 부모노드를 찾는 함수(특정한 노드의 부모를 찾을 수 있도록 함)
+    static int getParent(int parent[], int x){
         if(parent[x]==x) return x;
         return parent[x] = getParent(parent, parent[x]);
     }
 
-    static void unionParent(int[] parent, int a, int b){
+    // 각 부모 노드를 합침
+    static void unionParent(int parent[], int a, int b){
         a = getParent(parent, a);
         b = getParent(parent, b);
         if(a<b) parent[b] = a;
         else parent[a] = b;
     }
 
-    static boolean findParent(int[] parent, int a, int b){
+    // 같은 부모를 가지는지 확인
+    static boolean findParent(int parent[], int a, int b){
         a = getParent(parent, a);
         b = getParent(parent, b);
         if(a==b) return true;
