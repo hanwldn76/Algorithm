@@ -1,5 +1,4 @@
 n = int(input())
+i = n // 4
 
-for i in range(n//4):
-    print("long", end=" ")
-print("int")
+print("{}int".format("long "*i))
