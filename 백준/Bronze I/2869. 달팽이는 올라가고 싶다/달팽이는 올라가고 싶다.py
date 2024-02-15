@@ -1,6 +1,7 @@
-from math import ceil
 A, B, V = map(int, input().split())
 
 day = (V - B) / (A - B)
-
-print(ceil(day))
+if day == int(day):
+    print(int(day))
+else:
+    print(int(day)+1)
