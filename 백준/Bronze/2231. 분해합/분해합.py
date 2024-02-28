@@ -1,13 +1,12 @@
 n = int(input())
 result = 0
 
-for i in range(1, n):
-    lst = []
-    tmp = i
-    while tmp > 0:
-        lst.append(tmp%10)
-        tmp //= 10
-    if i+sum(lst)==n:
+for i in range(n//2, n):
+    s = str(i)
+    sum = 0
+    for j in range(len(s)):
+        sum += int(s[j])
+    if i+sum==n:
         result = i
         break
 
