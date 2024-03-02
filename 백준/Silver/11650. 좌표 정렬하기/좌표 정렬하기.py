@@ -1,8 +1,10 @@
+import sys
+
 n = int(input())
 x_y = list()
 
 for i in range(n):
-    row = list(map(int, input().split()))
+    row = list(map(int, sys.stdin.readline().split()))
     x_y.append(row)
 
 x_y.sort()
