@@ -1,16 +1,13 @@
 import sys
 
-n = int(input())
-x_y = list()
+n = int(sys.stdin.readline())
+x_y = []
 
 for i in range(n):
     row = list(map(int, sys.stdin.readline().split()))
-    tmp = row[0]
-    row[0] = row[1]
-    row[1] = tmp
     x_y.append(row)
 
-x_y.sort()
+x_y.sort(key=lambda x:(x[1], x[0]))
 
-for i in range(n):
-    print(x_y[i][1], x_y[i][0])
+for i in x_y:
+    print(*i)
