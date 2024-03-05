@@ -1,11 +1,11 @@
 import sys
 
-n = int(sys.stdin.readline())
+n = int(input())
 x_y = []
 
 for i in range(n):
-    row = list(map(int, sys.stdin.readline().split()))
-    x_y.append(row)
+    a, b = map(int, sys.stdin.readline().split())
+    x_y.append([a, b])
 
 x_y.sort(key=lambda x:(x[1], x[0]))
 
