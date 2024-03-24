@@ -1,17 +1,16 @@
 import sys
 
 n, m = map(int, sys.stdin.readline().split())
-lst_n, lst_m = list(), list()
+s = set()
 
 for i in range(n):
-    lst_n.append(input())
+    tmp = input()
+    s.add(tmp)
+
+count = 0
 for i in range(m):
-    lst_m.append(input())
+    tmp = input()
+    if tmp in s:
+        count += 1
 
-dic = {k: 0 for k in lst_n}
-
-for i in lst_m:
-    if i in dic:
-        dic[i] += 1
-
-print(sum(dic.values()))
+print(count)
