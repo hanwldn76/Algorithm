@@ -3,15 +3,14 @@ input = sys.stdin.readline
 
 n = int(input())
 dic = {}
-lst = []
 
 for i in range(n):
-    a, b = input().split()
-    dic[a] = b
+    name, state = input().split()
+    if state == 'enter':
+        dic[name] = state
+    else:
+        del dic[name]
 
-for i in dic.keys():
-    if dic[i] == 'enter':
-        lst.append(i)
+dic = sorted(dic.keys(), reverse=True)
 
-lst.sort(reverse=True)
-print(*lst, sep="\n")
+print(*dic, sep='\n')
