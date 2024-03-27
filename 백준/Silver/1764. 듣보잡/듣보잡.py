@@ -2,22 +2,17 @@ import sys
 input = sys.stdin.readline
 
 n, m = map(int, input().split())
-dic = {}
+non_listen = set()
+non_seen = set()
+cnt = 0
 
-for i in range(n+m):
-    tmp = input().rstrip()
-    if tmp in dic:
-        dic[tmp] += 1
-    else:
-        dic[tmp] = 1
+for i in range(n):
+    non_listen.add(input().rstrip())
 
-lst = []
+for i in range(m):
+    non_seen.add(input().rstrip())
 
-for i in dic.keys():
-    if dic[i] == 2:
-        lst.append(i)
-
-lst.sort()
+lst = sorted(list(non_listen & non_seen))
 
 print(len(lst))
 print(*lst, sep="\n")
