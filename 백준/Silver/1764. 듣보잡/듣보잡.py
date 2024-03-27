@@ -2,17 +2,18 @@ import sys
 input = sys.stdin.readline
 
 n, m = map(int, input().split())
-non_listen = set()
-non_seen = set()
-cnt = 0
+a = set()
+result = []
 
 for i in range(n):
-    non_listen.add(input().rstrip())
+    a.add(input().rstrip())
 
 for i in range(m):
-    non_seen.add(input().rstrip())
+    name = input().rstrip()
+    if name in a:
+        result.append(name)
 
-lst = sorted(list(non_listen & non_seen))
+result.sort()
 
-print(len(lst))
-print(*lst, sep="\n")
+print(len(result))
+print(*result, sep="\n")
