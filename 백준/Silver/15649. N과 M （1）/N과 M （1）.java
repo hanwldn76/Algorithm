@@ -29,6 +29,7 @@ public class Main {
                 bw.write(l + " ");
             }
             bw.newLine();
+            return;
         }
         for(int i = 0; i<n; i++){
             if(!visited[i]){
