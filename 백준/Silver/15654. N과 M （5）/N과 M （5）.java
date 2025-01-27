@@ -42,6 +42,7 @@ public class Main {
             }
             bw.newLine();
             bw.flush();
+            return;
         }
         else{
             for(int i = 0; i<n; i++){
