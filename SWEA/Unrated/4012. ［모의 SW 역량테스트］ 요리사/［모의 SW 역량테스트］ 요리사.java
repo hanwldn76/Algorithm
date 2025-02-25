@@ -18,6 +18,10 @@ public class Solution {
 	static int[][] arr;
 	static int min;
 	static boolean[] visited;
+	
+	static int[] a;
+	static int[] b;
+	
  	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st;
@@ -40,6 +44,10 @@ public class Solution {
 			
 			visited = new boolean[N+1];
 			min = Integer.MAX_VALUE;
+			
+			a = new int[N/2];
+			b = new int[N/2];
+			
 			dfs(0, 1);
 			
 			sb.append("#").append(test_case).append(" ").append(min).append("\n");
@@ -50,12 +58,11 @@ public class Solution {
 	}
 	private static void dfs(int cnt, int start) {		
 		if(cnt==N/2) {
-			List<Integer> a = new ArrayList<>();
-			List<Integer> b = new ArrayList<>();
+			int aIdx = 0, bIdx = 0;
 			
 			for(int i = 1; i<N+1; i++) {
-				if(visited[i]) a.add(i);
-				else b.add(i);
+				if(visited[i]) a[aIdx++] = i;
+				else b[bIdx++] = i;
 			}
 			sum(a, b);
 			return;
@@ -70,14 +77,14 @@ public class Solution {
 		}
 	}
 	
-	private static void sum(List<Integer> a, List<Integer> b) {
+	private static void sum(int[] a, int[] b) {
 		int aSum = 0, bSum = 0;
 
         for (int i = 0; i < N / 2; i++) {
             for (int j = 0; j < N / 2; j++) {
                 if (i != j) { // 자기 자신과의 시너지는 계산하지 않음
-                    aSum += arr[a.get(i)][a.get(j)];
-                    bSum += arr[b.get(i)][b.get(j)];
+                    aSum += arr[a[i]][a[j]];
+                    bSum += arr[b[i]][b[j]];
                 }
             }
         }
